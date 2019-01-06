@@ -19,8 +19,13 @@ var routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app); //register the route
 
 
-app.listen(port);
+app.listen(port, function() {
+  console.log('Magic is happening')
+});
 
+app.get('/', function(req, res) {
+  res.send('It\'s live baby!');
+})
 
 console.log('todo list RESTful API server started on: ' + port);
 
