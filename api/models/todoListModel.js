@@ -5,6 +5,10 @@ var Schema = mongoose.Schema;
 
 
 var TaskSchema = new Schema({
+  userId: {
+    type: String,
+    required: 'You must enter a valid ID'
+  },
   name: {
     type: String,
     required: 'Kindly enter the name of the task'

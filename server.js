@@ -8,7 +8,7 @@ var express = require('express'),
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://main-user:Flatland123!@tasklist-shard-00-00-cwzth.mongodb.net:27017,tasklist-shard-00-01-cwzth.mongodb.net:27017,tasklist-shard-00-02-cwzth.mongodb.net:27017/test?ssl=true&replicaSet=taskList-shard-0&authSource=admin&retryWrites=true', { useNewUrlParser: true }); 
+mongoose.connect('mongodb://admin:Password1@ds249824.mlab.com:49824/mindful-db', { useNewUrlParser: true }); 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
